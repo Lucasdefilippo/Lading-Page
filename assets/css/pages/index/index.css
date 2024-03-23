@@ -1,5 +1,5 @@
 /* Global */
-@import '../../global/global.css';
+@import "../../global/global.css";
 
 /* Partials */
-@import './partials/sectionApresentacao.css';
+@import "./partials/sectionApresentacao.css";
