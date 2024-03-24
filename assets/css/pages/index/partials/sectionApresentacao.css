@@ -1,0 +1,135 @@
+body {
+    overflow-x: hidden;
+    font-family: "Instok Web";
+}
+.apresentacao {
+    background-image: url("/assets/images/Background/moto_vermelha.jpg");
+    min-width: 100dvh;
+    width: 100%;
+    min-height: 1080px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+}
+#section1 {
+    max-width: 100dvh;
+    min-width: 1920px;
+    width: 100%;
+    min-height: 1080px;
+    height: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(17, 17, 17, 1) 10%,
+        rgba(17, 17, 17, 0) 100%
+    );
+}
+.logo {
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    top: -27%;
+    z-index: 1;
+}
+.title {
+    color: #fff;
+    max-width: 1000px;
+    width: 100%;
+    font-size: 96px;
+    font-family: "Istok Web";
+    font-weight: 700;
+    line-height: 77%;
+    position: absolute;
+    left: 7%;
+    top: 37%;
+    z-index: 1;
+}
+.title span {
+    color: #ed3237;
+}
+.subtitle {
+    color: #fff;
+    font-size: 32px;
+    max-width: 710px;
+    line-height: 164%;
+    position: absolute;
+    top: 54%;
+    left: 7%;
+    z-index: 1;
+}
+.subtitle span {
+    font-weight: 600;
+    z-index: 1;
+}
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 110px;
+    height: 100%;
+    max-width: 615px;
+    width: 100%;
+    background-color: #ed3237;
+    border-radius: 55px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    z-index: 1;
+}
+.whatsapp:not(:hover) {
+    animation: voltar 1s forwards;
+}
+.whatsapp img {
+    color: #fff;
+    max-width: 68px;
+    width: 68px;
+    max-height: 68px;
+    height: 100%;
+    z-index: 1;
+}
+.whatsapp span {
+    color: #fff;
+    font-size: 49px;
+    margin-left: 20px;
+    z-index: 1;
+}
+.whatsapp:hover {
+    transform: scale((1.1));
+    animation: scale 1s forwards;
+}
+.loja {
+    width: 348px;
+    height: 540px;
+    border-radius: 84px;
+    position: absolute;
+    top: 27%;
+    left: 66.9%;
+    z-index: 2;
+}
+.loja img {
+    width: 100%;
+    height: 100%;
+    border-radius: 84px;
+    object-fit: cover;
+    z-index: 1;
+}
+.blur {
+    background-color: #fefefe04;
+    width: 378px;
+    height: 581px;
+    border-radius: 85px;
+    position: absolute;
+    top: 25%;
+    left: 66.1%;
+    border-top: 1px solid #fefefe;
+    border-right: 1px solid #fefefe;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+}
