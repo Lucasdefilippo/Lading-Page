@@ -9,6 +9,8 @@ body {
 }
 .apresentacao {
     background-image: url("/assets/images/Background/moto_vermelha.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     min-width: 100dvh;
     width: 100%;
     min-height: 1080px;
@@ -22,8 +24,7 @@ body {
     z-index: 1;
 }
 #section1 {
-    max-width: 100dvh;
-    min-width: 1920px;
+    max-width: 100dvw;
     width: 100%;
     min-height: 1080px;
     height: 100%;
@@ -32,6 +33,8 @@ body {
         rgba(17, 17, 17, 1) 10%,
         rgba(17, 17, 17, 0) 100%
     );
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .logo {
     max-width: 600px;
@@ -211,17 +214,84 @@ body {
     color: var(--vermelho);
     position: absolute;
     top: 18%;
-    left: 20%;
+    left: 25%;
 }
 .tres {
     max-width: 650px;
     width: 100%;
     position: absolute;
     top: 20.8%;
-    left: 34.8%;
+    left: 37%;
     background: linear-gradient(
         270deg,
         rgb(255, 255, 255) 0%,
         rgba(255, 255, 255, 0) 100%
     );
+}
+.moto {
+    background-color: #201e1e;
+    color: #fff;
+    max-width: 737px;
+    max-height: 790px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    box-shadow: 5px 5px 5px #0000003a;
+}
+.name {
+    color: var(--branco);
+    font-size: 65px;
+    font-weight: 700px;
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+}
+.biz {
+    top: 25%;
+    left: 15%;
+}
+.bros {
+    top: 30%;
+    left: 55%;
+}
+.fazer {
+    top: 60%;
+    left: 15%;
+}
+.cg {
+    top: 65%;
+    left: 55%;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    font-size: 29px;
+    max-width: 680px;
+    max-height: 516px;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 6%;
+    left: 6%;
+}
+.motoca {
+    position: absolute;
+    max-width: 360px;
+    max-height: 360px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #0000003a;
+    bottom: -20%;
+    left: 6%;
+    object-position: center;
+    object-fit: cover;
 }
