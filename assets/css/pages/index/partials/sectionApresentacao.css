@@ -75,7 +75,8 @@ body {
 }
 .desc span,
 .subtitle span,
-p span {
+p span,
+.topico span {
     font-weight: 600;
     z-index: 1;
 }
@@ -387,11 +388,36 @@ h1 span {
     line-height: 80%;
     top: 2%;
 }
+.verificados img {
+    max-width: 83px;
+    width: 100%;
+    max-height: 58.59px;
+    height: 100%;
+}
 .topicos {
-    left: 7%;
+    position: absolute;
+    top: 26%;
+    left: 15%;
 }
 .topico {
+    color: var(--branco);
     left: 7%;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    font-size: 36px;
+}
+.verificados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 74px;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+.vantagens .whatsapp {
+    top: 91%;
+    left: 12%;
 }
