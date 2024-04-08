@@ -509,3 +509,8 @@ footer a:active {
 .ativo {
     animation: animado 10s forwards;
 }
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
