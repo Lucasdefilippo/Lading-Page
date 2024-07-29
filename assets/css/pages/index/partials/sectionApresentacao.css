@@ -76,7 +76,7 @@ body {
 .desc span,
 .subtitle span,
 p span,
-.topico span {
+.strong {
     font-weight: 600;
     z-index: 1;
 }
@@ -151,8 +151,12 @@ p span,
 .motos {
     background-color: var(--cinza);
     min-width: 100dvh;
-    max-height: 3400px;
-    height: 3400px;
+    min-height: 2785px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -8%;
 }
 .section {
     display: flex;
@@ -230,6 +234,13 @@ p span,
     line-height: 77%;
     color: var(--vermelho);
 }
+.motos .titulo {
+    margin-top: 10%;
+    margin-left: 100px;
+}
+.relative {
+    position: relative;
+}
 .tres {
     max-width: 650px;
     width: 100%;
@@ -238,6 +249,9 @@ p span,
         rgb(255, 255, 255) 0%,
         rgba(255, 255, 255, 0) 100%
     );
+    position: absolute;
+    right: 0px;
+    animation: animado 10s forwards;
 }
 .moto {
     background-color: #201e1e;
@@ -256,25 +270,50 @@ p span,
 }
 .painel {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin-top: 3%;
+    column-gap: 5%;
 }
 .name {
     color: var(--branco);
     font-size: 65px;
     font-weight: 700px;
+    position: absolute;
+    left: 22%;
+    bottom: 10%;
 }
 ul {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    font-size: 29px;
+    padding-left: 5%;
+    font-size: 23px;
     max-width: 680px;
     max-height: 516px;
     height: 100%;
     width: 100%;
     letter-spacing: 1px;
+}
+.bros,
+.biz,
+.fazer,
+.cg {
+    position: relative;
+    margin-bottom: 40%;
+}
+.bros img,
+.biz img,
+.fazer img,
+.cg img {
+    position: absolute;
+    right: -20%;
+    bottom: -20%;
+    z-index: 2;
+}
+.biz {
+    margin-top: 15%;
+}
+.bros {
+    margin-top: 22%;
 }
 .motoca {
     max-width: 360px;
@@ -287,6 +326,10 @@ ul {
     object-fit: cover;
 }
 .section3 {
+    display: flex;
+    flex-direction: column;
+}
+.escolha {
     background-image: url("/assets/images/Background/moto_garagem.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,7 +360,7 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.section3 h1 {
+.escolha h1 {
     text-align: center;
     color: var(--branco);
     font-size: 72px;
@@ -333,7 +376,7 @@ ul {
 h1 span {
     color: var(--vermelho);
 }
-.section3 p {
+.escolha p {
     color: var(--branco);
     max-width: 969px;
     max-height: 232px;
@@ -347,7 +390,7 @@ h1 span {
     top: 50%;
     right: 1%;
 }
-.section3 img {
+.escolha img {
     object-fit: cover;
     object-position: 14% center;
     max-width: 440px;
@@ -365,35 +408,39 @@ h1 span {
     height: 100%;
     width: 100%;
     background-color: var(--cinza);
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.vantagens h1 {
-    position: absolute;
-    line-height: 80%;
-    top: 2%;
+.vantagens .best {
+    color: #fff;
+    max-width: 1000px;
+    width: 100%;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 77%;
+    margin-bottom: 8%;
+    z-index: 1;
 }
-.verificados img {
+.topicos {
+    min-width: 100dvw;
+    width: 100%;
+}
+.topico {
+    color: var(--branco);
+    margin-left: 7%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    font-size: 36px;
+}
+.topico img {
     max-width: 83px;
     width: 100%;
     max-height: 58.59px;
     height: 100%;
-}
-.topicos {
-    position: absolute;
-    top: 21%;
-    left: 15%;
-}
-.topico {
-    color: var(--branco);
-    left: 7%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    font-size: 36px;
+    margin-right: 2%;
 }
 .verificados {
     display: flex;
@@ -401,14 +448,8 @@ h1 span {
     align-items: center;
     flex-direction: column;
     gap: 74px;
-    position: absolute;
-    top: 25%;
-    left: 7%;
 }
-.vantagens .whatsapp {
-    top: 91%;
-    left: 12%;
-}
+
 .avaliacao {
     display: flex;
     flex-direction: row;
@@ -492,6 +533,14 @@ footer a:active {
     color: #000;
     opacity: 7%;
     text-decoration: none;
+}
+.flexi {
+    display: flex;
+    flex-direction: column;
+}
+.vantagens .whatsapp {
+    margin-top: 5%;
+    padding: 3%;
 }
 /*.ativo {
     animation: animado 10s forwards;
